@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+      try {
+        console.log("The code to be evaluated is added");
+        notExist;
+        console.log("Second message");
+      } catch (error) {
+        console.log("We catch any errors");
+        console.log(error);
+      } finally{
+        console.log("The block will always be executed at the end");
+      }
+
+      try {
+        let number = "y";
+        if (isNaN(number)) {
+            throw new Error("The character entered is not a number");
+        }
+        console.log(number*number);
+      } catch (error) {
+        console.log(`The following error ocurred: ${error} `);
+      }
+
+    </script>
+</body>
+
+</html>
